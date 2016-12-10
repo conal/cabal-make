@@ -1,0 +1,29 @@
+% [cabal-make](http://haskell.org/haskellwiki/Cabal-make) changes
+
+## Version 0.5 ##
+
++  Added customization template: `my-cabal-make.inc`
++  hasktags now uses `$(sources)`
++  Added  [PanDoc](http://sophos.berkeley.edu/macfarlane/pandoc/) rules &
+   `pandocs` target.  Makes [CHANGES.html](CHANGES.html) from [CHANGES](CHANGES).
++  Added [makefile](makefile)
+
+## Version 0.4 ##
+
++  Changed handling of `top-src-dir`.  Now contains its own trailing "/", or
+   empty if source starts in main directory.
+
+## Version 0.3 ##
+
+Contributions from Jean-Philippe Bernardy:
+
++  Emacs-mode hint at top of `cabal-make.inc`
++  Make the source-directory configurable
++  Allow to customize HsColour path
++  Allow extra configuration options
+
+## Version 0.2 ##
+
++  Fixed potentially catastrophic bug: "tmp-dir" vs "temp-dir"
++  Added doc-clean target and remote doc cleaning
++  Added CHANGES file
